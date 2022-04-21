@@ -4,6 +4,15 @@ main{
     align-items: center;
     flex-direction: column;
 }
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    width: 80%;
+    height: auto;
+    
+
+}
 h2{
     font-size: 2rem;
     font-weight: 2000;
@@ -13,10 +22,13 @@ h2{
 }
 
 .form-meme {
-    display: grid;
-    grid-template: 40px 40px / 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     gap: 17px;
     margin-bottom: 17px;
+    width: 100%;
 }
 
 input {
@@ -27,12 +39,25 @@ input {
 }
 
 .form--button {
-    grid-column: 1 / -1;
+    width: 25vw;
+    height: 50px;
     font-family: "Karla", sans-serif;
     border-radius: 5px;
     background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
     color: white;
-    border: none;
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+
+.select-image-button{
+    width: 25vw;
+    height: 50px;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
+    border: 1px solid black;
     cursor: pointer;
 }
 
@@ -41,9 +66,10 @@ input{
     height: 50px;
     text-align: center;
     margin: 1rem;
+    margin: -2rem 1rem;
     font-size: 2rem;
     font-weight: bold;
-    border: 5px solid lightcoral;
+    border: 3px solid lightcoral;
     border-radius: 5px;
     color: lightcoral;
     padding: 2rem;
@@ -54,10 +80,18 @@ input{
 
 .meme {
     position: relative;
+    overflow: hidden;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .meme--image {
-    max-width: 100%;
+    max-width: auto;
+    max-height: 100%;
     border-radius: 3px;
 }
 
@@ -73,6 +107,7 @@ input{
     font-size: 2em;
     text-transform: uppercase;
     color: white;
+    cursor:grab;
     letter-spacing: 1px;
     text-shadow:
         2px 2px 0 #000,
@@ -86,6 +121,7 @@ input{
         2px 2px 5px #000;
 }
 
+
 .bottom {
     bottom: 0;
 }
@@ -93,7 +129,20 @@ input{
 .top {
     top: 0;
 }
+.image-gallery{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
 
+}
+.image-gallery-none{
+    display: none;
+}
 .images-display{
     position: absolute;
     width: 60vw;
@@ -108,11 +157,16 @@ input{
     border: 5px solid lightblue;
     border-radius: 15px;
     background-color: rgba(0,250,250,0.5);
-    z-index: 1;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 400ms;
+    
     
 }
 .image-display-none{
     display: none;
+    opacity: 0;
+  
 }
 
 .images-display img{
@@ -120,15 +174,35 @@ input{
     height: auto;
     border: 2px solid black;
     border-radius: 15px;
+    cursor: pointer;
     
+}
+.display-background{
+    position: absolute;
+    width:100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.display-background-none{
+    display: none;
 }
 
 .button-close-images{
     position:fixed;
-    width: 50%;
-    padding: 1rem 0rem;
-    font-size: 2rem;
-    
-   
-
+    bottom: 13rem;
+    height: 4rem;
+    width: 25%;
+    z-index: 3;
+   border-radius: 25px;
+    font-size: 2.5rem;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    cursor:pointer;
+    transition: ease 0.5s;
+}
+.button-close-images:hover{
+    background-color: #000;
 }

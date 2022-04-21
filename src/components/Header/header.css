@@ -1,0 +1,21 @@
+header{
+    height: 25%;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.header--image{
+    height: 70px;
+    width: 70px;
+    
+}
+
+
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}

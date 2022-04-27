@@ -42,7 +42,7 @@ const Body = () => {
 
   return (
     <main>
-         <h2>Crea tu Meme </h2>
+         <h2></h2>
          {/*======IMAGE GALLERY*======*/}
          
             <div className={imageDisplay ? "image-gallery" : "image-gallery-none"}>
@@ -111,7 +111,7 @@ const Body = () => {
                 </div>
                 {/*=====THE MEME====*/}
                 <div className="meme">
-                <img src={meme.randomImg} className="meme--image" alt="" />
+                <img src={meme.randomImg} className="meme--image" alt=""/>
                 <h3 className="meme--text top">{meme.topText}</h3>
                 <h3 className='meme--text bottom'>{meme.bottomText}</h3>
                 </div>

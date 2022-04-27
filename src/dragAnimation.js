@@ -32,11 +32,11 @@ function dragElement(elmnt) {
 
     elmnt.style.position="absolute"
     elmnt.style.zIndex ="10"
-    body.appendChild(elmnt);
-    elmnt.style.height= "100px"
-    elmnt.style.width= "125px"
-    elmnt.style.left="250px"
-    elmnt.style.top="250px"
+    //body.appendChild(elmnt);
+    elmnt.style.height= "200px"
+    elmnt.style.width= "325px"
+    //elmnt.style.top= "425px"
+    ///elmnt.style.left= "1217px"
 
 
 
@@ -51,8 +51,8 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     pos4 = e.clientY;
     // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px" ;
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px" ;
   }
 
   function closeDragElement() {

@@ -36,44 +36,8 @@ h2{
 input {
     font-family: "Karla", sans-serif;
     border-radius: 5px;
-    border: 1px solid #D5D4D8;
-    text-indent: 5px;
-}
-
-.form--button {
-   
-    font-family: "Karla", sans-serif;
-    border-radius: 5px;
-    background-color: #711F8D;
-    color: white;
-    border: 1px solid black;
-    cursor: pointer;
-    font-size: 2rem;
-    font-family: "Karla", sans-serif;
-    font-weight: bold;
-    padding: 15px 50px;
-    transition: ease 0.5s;
     
-}
-.form--button:hover{
-    background-color: #A818DA;
-    transform: translate(-5px, -10px);
-    box-shadow: 5px 10px rgba(0,0,0,0.2);
-
-}
-
-.select-image-button{
-    width: 25vw;
-    height: 50px;
-    font-family: "Karla", sans-serif;
-    border-radius: 5px;
-    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-    color: white;
-    border: 1px solid black;
-    cursor: pointer;
-}
-
-input{
+    text-indent: 5px;
     width: 25vw;
     height: 50px;
     text-align: center;
@@ -81,12 +45,70 @@ input{
     margin: -2rem 1rem;
     font-size: 2rem;
     font-weight: bold;
-    border: 3px solid lightcoral;
+    border: 3px solid #555;;
     border-radius: 5px;
-    color: lightcoral;
+    color: rgb(183, 183, 183);
     padding: 2rem;
     font-family: 'Poppins', sans-serif;
 }
+
+.form--button {
+    width: 25vw;
+    height: 70px;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    background-color: #ededed;
+    color: rgb(183, 183, 183);
+    border: 0px solid black;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: "Karla", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    transition: ease 0.5s;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5) inset;
+    margin-bottom: -55px;
+    
+}
+.form--button:hover{
+    
+    font-size: 2.1rem;
+    padding: 13px 45px;
+    color: #555;
+    background-color: white;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) inset;
+
+}
+
+.select-image-button{
+    width: 25vw;
+    height: 70px;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    background-color: #ededed;
+    color: rgb(183, 183, 183);
+    border: 0px solid black;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: "Karla", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    transition: ease 0.5s;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5) inset;
+    
+}
+.select-image-button:hover{
+    
+    font-size: 2.1rem;
+    
+    color: #555;
+    background-color: white;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) inset;
+
+}
+
 
 
 
@@ -98,15 +120,18 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 1px 3px #000 inset;
+    box-shadow: 0px 0px 35px 8px rgba(0,0,0,0.5) inset;
     padding: 5px;
+    background-color: #D5D4D8;
+    border-radius: 5px;
 
 }
 
 .meme--image {
-    max-width: auto;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
     border-radius: 3px;
+    margin: 5px;
 }
 
 .meme--text {

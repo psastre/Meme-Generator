@@ -106,8 +106,8 @@ const Body = () => {
                     onChange={handleChange}
                     
                     />
-                    <button className='form--button' onClick={imgRandomer}>Dame mi meme</button>
-                    <button className='select-image-button'onClick={toggle} >Ver imagenes </button>
+                    <button className='form--button' onClick={imgRandomer}>Next meme</button>
+                    <button className='select-image-button'onClick={toggle} >meme gallery </button>
                 </div>
                 {/*=====THE MEME====*/}
                 <div className="meme">

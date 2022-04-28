@@ -5,7 +5,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 
 .header--image{

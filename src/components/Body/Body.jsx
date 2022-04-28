@@ -83,7 +83,7 @@ const Body = () => {
                                 alt={image.name} />)})}
                     </div>
             </div>
-                <button className='button-close-images' onClick={toggle} >Cerrar</button>
+                <button className='button-close-images' onClick={toggle} >CLOSE</button>
 
             </div>
             
@@ -106,8 +106,10 @@ const Body = () => {
                     onChange={handleChange}
                     
                     />
+                    <p>*Drag and drop the text.</p>
                     <button className='form--button' onClick={imgRandomer}>Next meme</button>
                     <button className='select-image-button'onClick={toggle} >meme gallery </button>
+                    
                 </div>
                 {/*=====THE MEME====*/}
                 <div className="meme">
